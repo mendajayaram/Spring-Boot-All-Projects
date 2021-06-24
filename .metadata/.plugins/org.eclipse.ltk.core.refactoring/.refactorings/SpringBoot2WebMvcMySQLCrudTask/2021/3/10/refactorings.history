@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringBoot2WebMvcMySQLCrudTask/src/main/resources/templates/EmployeeData.html&apos; to &apos;StudentData.html&apos;" description="Rename resource &apos;EmployeeData.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/EmployeeData.html" name="StudentData.html" stamp="1614912110270" updateReferences="true"/>
+</session>

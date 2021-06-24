@@ -1,0 +1,5 @@
+package com.nt.jai.runner;
+
+public class MyJobRunner {
+
+}

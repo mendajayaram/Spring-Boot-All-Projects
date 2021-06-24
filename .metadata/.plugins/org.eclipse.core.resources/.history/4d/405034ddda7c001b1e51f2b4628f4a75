@@ -1,0 +1,93 @@
+package com.nt.jai.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.nt.jai.model.Employee;
+import com.nt.jai.service.EmployeeServiceImpl;
+
+@Controller
+@RequestMapping("/employee")
+
+public class EmployeeController {
+	@Autowired
+	private EmployeeServiceImpl empservice;
+
+	@GetMapping("/register")
+	public String showRegPage() {
+		return "EmployeeRegister";
+	}
+
+	@PostMapping("/save")
+	public String saveEmp(@ModelAttribute Employee employee, Model model) {
+		Integer id = empservice.SaveEmployee(employee);
+		String msg = "Employee '" + id + "' saved";
+		model.addAttribute("message", msg);
+		return "EmployeeRegister";
+	}
+
+	@GetMapping("/All")
+	public String shoeEmployeelist(Model model) {
+		getUiEmployeeTableData(model);
+		return "EmployeeData";
+
+	}
+
+	@GetMapping("/delete")
+	public String DeleteofEmployee(@RequestParam("id") Integer empId, Model model) {
+		empservice.deleteEmployee(empId);
+		/*
+		 * List<Employee>list=empservice.getAllEmployeelist();
+		 * model.addAttribute("list", list);
+		 */
+		return "redirect:All";
+
+	}
+
+	@GetMapping("/edit")
+	public String showEdit(
+			@RequestParam("id") Integer id, Model model) { 
+
+	String page = null;
+	Optional<Employee> opt=	empservice.getOneEmployee(id);
+	if(opt.isPresent()) {
+		Employee emp = opt.get();
+		model.addAttribute("employee", emp);
+		page = "EmployeeEdit";
+	} else {
+		page = "redirect:all";
+	}
+	return page;
+
+}
+	@PostMapping("/update")
+	public String showupdate(@ModelAttribute Employee employee,Model model) {
+		empservice.updateEmployee(employee);
+
+
+		//fetch latest data after delete
+		getUiEmployeeTableData(model);
+		
+		//create message and display at UI
+		model.addAttribute("msg", "Employee '"+employee.getEmpId()+"' Updated!!");
+		return "EmployeeData";
+		//return "redirect:all";
+		
+	}
+
+	private void getUiEmployeeTableData(Model model) {
+		
+		List<Employee> list = empservice.getAllEmployeelist();
+		model.addAttribute("list", list);
+	}
+}

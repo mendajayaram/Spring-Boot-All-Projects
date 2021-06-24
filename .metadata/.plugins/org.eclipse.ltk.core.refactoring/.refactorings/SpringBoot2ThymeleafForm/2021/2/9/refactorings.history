@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.nt.jai.controller&apos; to &apos;com.nt.jai.model&apos;&#x0D;&#x0A;- Original project: &apos;SpringBoot2ThymeleafForm&apos;&#x0D;&#x0A;- Original element: &apos;SpringBoot2ThymeleafForm/src/main/java/com.nt.jai.controller&apos;&#x0D;&#x0A;- Renamed element: &apos;SpringBoot2ThymeleafForm/src/main/java/com.nt.jai.model&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.nt.jai.controller&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.nt.jai.controller" name="com.nt.jai.model" qualified="false" references="true" stamp="1614267574032" textual="false" version="1.0"/>
+</session>

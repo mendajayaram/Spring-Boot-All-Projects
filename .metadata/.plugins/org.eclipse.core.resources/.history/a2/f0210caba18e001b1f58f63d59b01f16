@@ -1,0 +1,19 @@
+package com.nt.jai;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.test.context.TestPropertySource;
+
+@SpringBootTest(webEnvironment = WebEnvironment.MOCK)
+@AutoConfigureMockMvc
+@TestPropertySource("classpath:application-test.properties")
+
+public class SpringBoot2RestCrudMySqlApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

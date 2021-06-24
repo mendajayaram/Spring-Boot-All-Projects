@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="CommitDialog.authorValues">
+		<item value="DELL &lt;DELL@DESKTOP-QCITV0E&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="DELL &lt;DELL@DESKTOP-QCITV0E&gt;"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="E:\JAYARAMSTSSPRINGBOOTPROGRAMS\SpringBoot2ThymeleafForm\.git">
+			<item value="false"/>
+			<item value="DELL &lt;DELL@DESKTOP-QCITV0E&gt;"/>
+			<item value="fg"/>
+			<item value="DELL &lt;DELL@DESKTOP-QCITV0E&gt;"/>
+			<item value="b32db006d08515080c43715d393139f69f3bdf9e"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+		<list key="E:\JAYARAMSTSSPRINGBOOTPROGRAMS\SpringBoot2WebMvcMySQLCrudTask\.git">
+			<item value="false"/>
+			<item value="DELL &lt;DELL@DESKTOP-QCITV0E&gt;"/>
+			<item value="cx"/>
+			<item value="DELL &lt;DELL@DESKTOP-QCITV0E&gt;"/>
+			<item value="da0efa83b9e09cca1626f12e07e05259af74e2e0"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="358"/>
+		<item key="DIALOG_Y_ORIGIN" value="67"/>
+		<item key="DIALOG_WIDTH" value="666"/>
+		<item key="DIALOG_HEIGHT" value="458"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.dialogs.RebaseTargetSelectionDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="422"/>
+		<item key="DIALOG_Y_ORIGIN" value="18"/>
+		<item key="DIALOG_WIDTH" value="538"/>
+		<item key="DIALOG_HEIGHT" value="532"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
